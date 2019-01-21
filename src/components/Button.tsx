@@ -1,6 +1,12 @@
 import React from 'react'
 import { Button as Btn }from 'antd'
+import { observer } from 'mobx-react'
+import world from '../stores/world'
 
-const Button: React.FunctionComponent<{}> = () => <Btn>hello</Btn>
+interface Props {
+  onClick?: () => any
+}
 
-export default Button
+const Button: React.FunctionComponent<Props> = (props: Props) => <Btn {...props}>{world.sentence}</Btn>
+
+export default observer(Button)

@@ -8,7 +8,13 @@ module.exports = (baseConfig, env, config) => {
         libraryName: 'antd',
         libraryDirectory: 'es',
         style: 'css'
-      }]]
+      }],
+      ['module-resolver', {
+        'alias': {
+          'mobx': './node_modules/mobx/lib/mobx.es6.js'
+        }
+      }]
+    ]
     },
   });
   config.resolve.extensions.push('.ts', '.tsx');
