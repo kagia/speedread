@@ -4,23 +4,23 @@ self.__precacheManifest = [
     "url": "/speedread/static/js/runtime~main.5bdf92e7.js"
   },
   {
-    "revision": "b493f9f700414f22b1cd",
-    "url": "/speedread/static/js/main.b493f9f7.chunk.js"
+    "revision": "a375280fd138fca806f9",
+    "url": "/speedread/static/js/main.a375280f.chunk.js"
   },
   {
     "revision": "5dd7261c1c4de343d2ee",
     "url": "/speedread/static/js/1.5dd7261c.chunk.js"
   },
   {
-    "revision": "b493f9f700414f22b1cd",
-    "url": "/speedread/static/css/main.b077798f.chunk.css"
+    "revision": "a375280fd138fca806f9",
+    "url": "/speedread/static/css/main.44687070.chunk.css"
   },
   {
     "revision": "5dd7261c1c4de343d2ee",
     "url": "/speedread/static/css/1.3c1dcf10.chunk.css"
   },
   {
-    "revision": "77ce5073cc6643c6fda4d0753b4b1294",
+    "revision": "f421fbde675e9d0898f1e24a1611c9d9",
     "url": "/speedread/index.html"
   }
 ];
