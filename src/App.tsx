@@ -2,26 +2,24 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Button from './components/Button';
+import { FlipBook } from './stores/FlipBook';
+import WordCard from './components/WordCard';
+import SettingsForm from './components/SettingsForm';
+import { Card, Divider } from 'antd';
+import DevTools from 'mobx-react-devtools';
+
+const flipbook = new FlipBook
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-            <Button/>
-          </a>
-        </header>
+        <Card style={{ width: 500 }}>
+          <WordCard flipbook={flipbook} />
+          <Divider>settings</Divider>
+          <SettingsForm flipbook={flipbook} />
+        </Card>
+        <DevTools/>
       </div>
     );
   }
