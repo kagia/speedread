@@ -6,7 +6,6 @@ import { FlipBook } from './stores/FlipBook';
 import WordCard from './components/WordCard';
 import SettingsForm from './components/SettingsForm';
 import { Card, Divider } from 'antd';
-import DevTools from 'mobx-react-devtools';
 
 const flipbook = new FlipBook
 
@@ -19,7 +18,6 @@ class App extends Component {
           <Divider>settings</Divider>
           <SettingsForm flipbook={flipbook} />
         </Card>
-        <DevTools/>
       </div>
     );
   }
