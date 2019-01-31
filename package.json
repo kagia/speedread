@@ -3,6 +3,7 @@
   "author": "benjamin kagia",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kagia.github.io/speedread",
   "dependencies": {
     "@types/jest": "23.3.13",
     "@types/node": "10.12.18",
@@ -22,7 +23,9 @@
     "test": "rescripts test",
     "eject": "rescripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,6 +50,7 @@
     "babel-loader": "8.0.4",
     "babel-plugin-import": "^1.11.0",
     "babel-plugin-module-resolver": "^3.1.2",
+    "gh-pages": "^2.0.1",
     "mobx-react-devtools": "^6.0.3"
   },
   "rescripts": [
@@ -75,7 +79,8 @@
         }
       ],
       [
-        "module-resolver", {
+        "module-resolver",
+        {
           "alias": {
             "mobx": "./node_modules/mobx/lib/mobx.es6.js"
           }
