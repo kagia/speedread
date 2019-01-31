@@ -13,11 +13,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Card style={{ width: 500 }}>
-          <WordCard flipbook={flipbook} />
-          <Divider>settings</Divider>
-          <SettingsForm flipbook={flipbook} />
-        </Card>
+        <div className="App-container">
+          <Card style={{ width: 500 }}>
+            <WordCard flipbook={flipbook} />
+            <Divider>settings</Divider>
+            <SettingsForm flipbook={flipbook} />
+          </Card>
+        </div>
+        <div className="App-footer">
+          github: <a href="https://github.com/kagia/speedread">https://github.com/kagia/speedread</a>
+        </div>
       </div>
     );
   }

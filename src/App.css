@@ -1,7 +1,12 @@
-.App {
+.App-container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   width: 100%;
+}
+
+.App-footer {
+  padding: 1em;
+  text-align: center;
 }
